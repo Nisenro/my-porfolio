@@ -4,79 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <title>HTML Project</title>
 </head>
-<body>
-  <header>
-    <div>  
-      <nav>
-        <h3><i class="fa fa-desktop"></i> Lady Developer</h3>        
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-    <!-- Home -->
-    <section>
-      <div> 
-        <p><b>HOW TO BE A WEB DEVELOPER</b></p>  
-        <br>
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/LTwFX-hitQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>      
-    </section>
-    <section>
-      <form>
-        <label for="about">About</label><br>
-        <textarea id="about" name="about" rows="2" cols="50" placeholder="I am an entry-level software developer and a beauty artist."></textarea>
-      </form>
-    </section>
-    <section>
-      <form>
-        <label for="resume">Resume</label><br>
-        <textarea id="about" name="about" rows="3" cols="35" placeholder="Knowledge of the HTML language with CSS. Javascript knowledge as well as Mentoring."></textarea>
-      </form>
-    </section>
-    <section>
-      <form>
-        <label for="work">Work</label><br>
-        <textarea id="about" name="about" rows="3" cols="30" placeholder="https://github.com/Nisenro"></textarea>
-      </form>
-    </section>
-    <form>
-      <br/>
-      <label>Contact</label>
-      <input type="text" name="number" value="08028042022"/> 
-      <br>
-      <br>
-      <a href="home">
-        <button>Home</button>
-      </a> 
-    </form>
-  </div>
-  <br>
-</body>
-<footer>
-  <div>
-    <i class="fab fa-github fa-2x"></i>
-    <i class="fab fa-linkedin fa-2x"></i>
-    <i class="fab fa-twitter fa-2x"></i>
-    <i class="fab fa-instagram fa-2x"></i>
-  </div>
-  <p>Copyright 2022 - Html Project by Adenike</p>
-</footer>
-</html>
 
+<body>
+  <div class="container">
+    <header>
+      <div class="navbar">
+        <h2><i class="fa fa-desktop"></i> Lady Developer</h3>
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="title">
+          <h4 class="name">Adeseke Adegbenro</h2>
+          <p>A beauty artist turned into software developer</p>
+        </div>
+        <div class="flex-items">
+          <div>
+            <div>
+              <h3>About</h3>
+              <p>
+                I am an entry-level software engineer with over seven years experience as an artist in the beauty industry. Watch the video to see what I do.
+              </p>
+              <iframe width="400" height="250" src="https://www.youtube.com/embed/h9BIkms7kBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>Resume</h3>
+              <p>
+                Knowledge of the HTML language with CSS. Javascript knowledge as well as Mentoring.
+              </p>
+              <img src=".//images/logo image download.png" alt="image showing html, css and javascript logos">
+            </div>
+          </div>
+          <div>
+            <div>
+              <h3>Work</h3>
+              <form>
+                <label for="work"></label><br>
+                <textarea id="about" name="about" rows="3" cols="30" placeholder="To see some of the projects - https://github.com/Nisenro"></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <form class="contact">
+            <a href="home">
+              <button>Home</button>
+            </a>
+            <br>
+            <label>Contact</label>
+            <input type="text" name="number" value="08028042022" /> 
+            <br>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>  
+
+  <footer>
+    <div>
+      <i class="fab fa-github fa-2x"></i>
+      <i class="fab fa-linkedin fa-2x"></i>
+      <i class="fab fa-twitter fa-2x"></i>
+      <i class="fab fa-instagram fa-2x"></i>
+    </div>
+    <p>Copyright 2022 - CSS Checkpoint by Adenike</p>
+  </footer>
+  </div>
+</body>
+</html>
